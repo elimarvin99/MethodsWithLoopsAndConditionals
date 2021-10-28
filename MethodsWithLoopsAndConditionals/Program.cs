@@ -6,8 +6,13 @@ namespace MethodsWithLoopsAndConditionals
     {
         static void Main(string[] args)
         {
-
-            
+            Thousand();
+            ThreeNine();
+            Equality(1, 2);
+            EvenOdd(3245);
+            AboveZero(-5);
+            AgeVote();
+            RangeCheck();
             MultTable();
         }
         //Write a method that will print to the console all numbers 1000 through -1000.
@@ -38,11 +43,11 @@ namespace MethodsWithLoopsAndConditionals
         { 
             if (a == b)
             {
-                Console.WriteLine("true"); ;
+                Console.WriteLine($"{a} is equal to {b}"); ;
             }
             else
             {
-                Console.WriteLine("false");
+                Console.WriteLine($"{a} is not equal to {b}");
             }
         }
 
@@ -112,7 +117,7 @@ namespace MethodsWithLoopsAndConditionals
         {
             Console.WriteLine("Please enter any number to multiply from 1 to 12:");
             var guess = Convert.ToDouble(Console.ReadLine());
-          
+            Console.WriteLine("This is your result:");
             for (int i = 1; i <= 12; i++)
             {
                 Console.WriteLine(guess * i);
