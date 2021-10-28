@@ -101,7 +101,7 @@ namespace MethodsWithLoopsAndConditionals
         {
             Console.WriteLine("Please enter a number from -10 to 10:");
             var guess = Convert.ToDouble(Console.ReadLine());
-            if (guess > -10 || guess > 10) // checking if -10 is lower, in other words less than -43 which is technically bigger in being more negative
+            if (guess >= -10 && guess <= 10) // checking if -10 is lower, in other words less than -43 which is technically bigger in being more negative
             {
                 Console.WriteLine("Thanks, you're number is in the correct range");
             }
@@ -118,6 +118,8 @@ namespace MethodsWithLoopsAndConditionals
             Console.WriteLine("Please enter any number to multiply from 1 to 12:");
             var guess = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("This is your result:");
+
+            //use a for loop to create numbers 1 - 12 and than multiply them by the users input
             for (int i = 1; i <= 12; i++)
             {
                 Console.WriteLine(guess * i);
